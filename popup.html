@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Prompt Generator</title>
+  <link rel="stylesheet" type="text/css" href="popup.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Prompt Generator</h1>
+    <form>
+      <label for="theme">Object:</label>
+      <input type="text" id="theme" name="theme" required>
+      <br>
+
+      <label for="actions">Actions (separated by commas):</label>
+      <input type="text" id="actions" name="actions" required>
+      <br>
+
+      <label for="backgrounds">Scene (separated by commas):</label>
+      <input type="text" id="backgrounds" name="backgrounds" required>
+      <br>
+
+      <button type="button" id="generate">Generate Prompts</button>
+    </form>
+
+    <div id="prompts"></div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+
+</html>
